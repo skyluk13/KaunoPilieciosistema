@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Display;
 import android.view.View;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 import android.content.Intent;
 import android.view.Menu;
@@ -22,21 +22,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final EditText email = (EditText) findViewById(R.id.Email);
-        final EditText password = (EditText) findViewById(R.id.password);
+
         final Button validate = (Button) findViewById(R.id.validate);
+        final AutoCompleteTextView emailview = (AutoCompleteTextView) findViewById(R.id.Email);
+        final AutoCompleteTextView passworderror = (AutoCompleteTextView) findViewById(R.id.password);
 
 
         validate.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                if (!validateEmail(email.getText().toString())) {
-                    email.setError("Neteisingas Email'as");
-                    email.requestFocus();
-                } else if (!validatePassword(password.getText().toString())) {
-                    password.setError("Neteisingas Slaptazodis");
-                    password.requestFocus();
+                if (!validateEmail(emailview.getText().toString())) {
+                    emailview.setError(getString(R.string.emailas));
+                    emailview.requestFocus();
+                } else if (!validatePassword(passworderror.getText().toString())) {
+                    passworderror.setError(getString(R.string.passwordErroras));
+                    passworderror.requestFocus();
                 } else {
                     Toast.makeText(MainActivity.this, "Sekmingai prisijungete", Toast.LENGTH_LONG).show();
                     Intent i = new Intent(MainActivity.this, UserAccount.class);

@@ -5,7 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.moksleivis.myapplication.UserAccount">
+    tools:context="com.example.moksleivis.myapplication.UserAccount"
+    android:background="@drawable/prisij1">
+
+    <Button
+        android:id="@+id/dummy_button1"
+        style="?metaButtonBarButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_button1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -30,5 +42,6 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_dialog_email" />
+
 
 </android.support.design.widget.CoordinatorLayout>

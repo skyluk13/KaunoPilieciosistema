@@ -11,7 +11,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.moksleivis.labaratoriniailk.MainActivity">
 
-    <EditText
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="145dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/kaunas" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="KAUNO POLIEČIO SISTEMA"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#43addf" />
+
+    <AutoCompleteTextView
         android:id="@+id/Email"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -19,7 +35,7 @@
         android:textColor="#fff"
         />
 
-    <EditText android:id="@+id/password"
+    <AutoCompleteTextView android:id="@+id/password"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:password="true"

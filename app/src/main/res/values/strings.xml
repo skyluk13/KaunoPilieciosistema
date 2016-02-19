@@ -2,4 +2,14 @@
     <string name="app_name">Kauno Piliecio sistema</string>
     <string name="app_names">KPS</string>
     <string name="title_activity_user_account">UserAccount</string>
+
+    <string name="title_activity_vartotojas">vartotojas</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">VARTOTOJO PANELE</string>
+
+    <string name="emailas">Neteisingas Email</string>
+    <string name="passwordErroras">Neteisingas Slaptazodis</string>
+
+    <string name="dummy_button1">Vartotojo parametrai</string>
+    <string name="dummy_content1">VARTOTOJAS</string>
 </resources>
