@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kauno Piliecio sistema</string>
+    <string name="app_names">KPS</string>
+    <string name="title_activity_user_account">UserAccount</string>
+</resources>
